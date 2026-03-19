@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-primary-dark: #020617;
+  --color-primary-light: #334155;
+  
+  --color-secondary: #059669; /* Emerald 600 - Trust/Verified */
+  --color-secondary-dark: #064e3b;
+  --color-secondary-light: #34d399;
+  
+  --color-accent: #2563eb; /* Blue 600 - Professionalism */
+  --color-accent-dark: #1e40af;
+  --color-accent-light: #60a5fa;
+
+  --font-sans: "Inter", "sans-serif";
+}
+
+/* Base styles using CSS variables defined in @theme */
+body {
+  background-color: #f8fafc; /* Slate 50 */
+  color: #0f172a; /* Slate 900 */
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Utilities - Modern v4 style using @utility or raw CSS */
+.glass {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.heading-xl {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-primary-dark tracking-tighter;
+}
+
+.heading-lg {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-primary-dark;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #f1f5f9;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-outline {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: rgba(30, 58, 138, 0.05); /* primary with opacity */
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px white;
+}
