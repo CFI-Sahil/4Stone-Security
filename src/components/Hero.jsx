@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen lg:min-h-[90vh] flex items-center overflow-hidden pt-20 lg:pt-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-20 lg:pt-0">
       {/* Background Image for Mobile overlay */}
       <div className="absolute inset-0 lg:hidden pointer-events-none overflow-hidden">
         <motion.img
