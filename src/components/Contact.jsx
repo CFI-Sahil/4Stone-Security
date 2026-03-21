@@ -15,7 +15,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6"
+            className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 md:mb-8 tracking-tight"
           >
             Contact Us
           </motion.h1>
@@ -23,7 +23,7 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="text-lg text-slate-300 max-w-2xl mx-auto"
+            className="text-primary-light text-base sm:text-xl max-w-3xl mx-auto leading-relaxed px-4 md:px-0"
           >
             Professional Security & Facility Management solutions at your doorstep. Get in touch with our experts today.
           </motion.p>
@@ -35,27 +35,27 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
             {/* Contact Form */}
             <div className="card shadow-2xl p-8 md:p-12">
-              <h3 className="text-2xl font-bold text-primary-dark mb-2">Send us a Message</h3>
-              <p className="text-slate-500 mb-8">Fill out the form below and our team will get back to you within 24 hours.</p>
+              <h3 className="text-xl lg:text-2xl font-bold text-primary-dark mb-2">Send us a Message</h3>
+              <p className="text-sm lg:text-base text-slate-500 mb-8">Fill out the form below and our team will get back to you within 24 hours.</p>
 
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="John Doe" />
+                    <input type="text" className="w-full text-sm px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Krishna Gupta" />
                   </div>
                   <div>
                     <label className="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="9930277211" />
+                    <input type="text" className="w-full text-sm px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="9930456789" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="example@gmail.com" />
+                  <input type="email" className="w-full text-sm px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="example@gmail.com" />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2">Message</label>
-                  <textarea rows="4" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" placeholder="How can we help you?"></textarea>
+                  <textarea rows="4" className="w-full text-sm px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" placeholder="How can we help you?"></textarea>
                 </div>
                 <button type="submit" className="w-full btn-primary bg-accent hover:bg-accent-dark flex items-center justify-center gap-2 py-4">
                   Send Message <Send size={18} />
@@ -84,8 +84,8 @@ const Contact = () => {
                       <item.icon size={24} />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold text-primary-dark mb-1">{item.title}</h4>
-                      <p className="text-slate-500 font-medium">{item.detail}</p>
+                      <h4 className="text-base md:text-lg font-bold text-primary-dark mb-1">{item.title}</h4>
+                      <p className="text-slate-500 text-sm md:text-base font-medium">{item.detail}</p>
                     </div>
                   </motion.div>
                 ))}

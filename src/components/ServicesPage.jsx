@@ -39,7 +39,7 @@ const ServicesPage = () => {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="bg-primary pt-28 pb-16 md:pt-32 md:pb-24 text-white text-center relative overflow-hidden">
+      <section className="bg-primary pt-16 pb-16 md:pt-24 md:pb-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2" />
         </div>
@@ -79,7 +79,7 @@ const ServicesPage = () => {
         />
 
         {/* Facility Management */}
-        <section className="py-16 md:py-24 border-b border-slate-100">
+        <section className="pt-16 pb-8 md:pt-24 md:pb-12 border-b border-slate-100">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +140,7 @@ const ServicesPage = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: idx * 0.1, ease: [0.21, 0.45, 0.32, 0.9] }}
-                    className="p-5 bg-slate-50 rounded-2xl border border-slate-200 text-center font-bold text-sm text-primary-dark hover:bg-primary hover:text-white hover:border-primary transition-all cursor-default"
+                    className="p-5 bg-slate-50 rounded-2xl border border-slate-200 text-center font-bold text-[12px] md:text-sm text-primary-dark hover:bg-primary hover:text-white hover:border-primary transition-all cursor-default"
                   >
                     {item}
                   </motion.div>
@@ -151,7 +151,7 @@ const ServicesPage = () => {
         </section>
 
         {/* Industrial Labour */}
-        <section className="py-32">
+        <section className="pt-8 pb-24 md:pt-12 md:pb-32">
           <div className="lg:grid lg:grid-cols-2 lg:gap-24 items-center">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -163,7 +163,7 @@ const ServicesPage = () => {
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop"
                 alt="Industrial workers"
-                className="rounded-[3rem] shadow-2xl"
+                className="rounded-[1rem] shadow-2xl"
               />
             </motion.div>
             <div className="mt-12 lg:mt-0 order-1 lg:order-2">
@@ -175,15 +175,15 @@ const ServicesPage = () => {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   className="flex items-center gap-6 mb-6"
                 >
-                  <div className="w-2 h-16 bg-primary-light rounded-full shrink-0" />
-                  <h2 className="text-4xl md:text-6xl font-bold text-primary-dark tracking-tighter leading-tight">Industrial Labour</h2>
+                  <div className="w-2 h-12 md:h-16 bg-primary-light rounded-full shrink-0" />
+                  <h2 className="text-3xl md:text-5xl font-bold text-primary-dark tracking-tighter leading-tight">Industrial Labour</h2>
                 </motion.div>
                 <motion.p
                   initial={{ opacity: 0, x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                  className="text-slate-600 text-lg leading-relaxed max-w-xl mb-6 ml-9"
+                  className="text-slate-600 text-sm md:text-lg leading-relaxed max-w-xl mb-6 ml-9"
                 >
                   We bridge the gap between project requirements and quality manpower. Our extensive network ensures you get the right skill at the right time.
                 </motion.p>
@@ -212,11 +212,11 @@ const ServicesPage = () => {
         </section>
 
         {/* Training Programs */}
-        <section className="py-24 rounded-[3rem] bg-primary text-white p-10 md:p-24 relative overflow-hidden shadow-2xl shadow-primary/20">
+        <section className="py-12 rounded-[1rem] bg-primary text-white p-10 md:p-24 relative overflow-hidden shadow-2xl shadow-primary/20">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2" />
           </div>
-          <div className="relative z-10 text-center mb-20">
+          <div className="relative z-10 text-center mb-10 md:mb-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -232,7 +232,7 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
-              className="p-10 bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 text-center"
+              className="p-10 bg-slate-900/50 backdrop-blur-xl rounded-2xl border border-white/10 text-center"
             >
               <Zap className="text-accent mx-auto mb-6" size={40} />
               <h4 className="text-2xl font-bold mb-6">Fire Safety</h4>
@@ -244,7 +244,7 @@ const ServicesPage = () => {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
               transition={{ delay: 0.2 }}
-              className="p-10 bg-slate-900/50 backdrop-blur-xl rounded-3xl border border-white/10 text-center"
+              className="p-10 bg-slate-900/50 backdrop-blur-xl rounded-2xl border border-white/10 text-center"
             >
               <Award className="text-accent mx-auto mb-6" size={40} />
               <h4 className="text-2xl font-bold mb-6">Mock Drills</h4>

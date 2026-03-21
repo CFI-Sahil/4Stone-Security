@@ -28,7 +28,7 @@ const Hero = () => {
   const imageVariants = {
     hidden: { opacity: 0, x: isMobile ? 0 : 50, scale: isMobile ? 0.9 : 1 },
     visible: { 
-      opacity: isMobile ? 0.1 : 1, 
+      opacity: isMobile ? 0.3 : 1, 
       x: 0, 
       scale: 1,
       transition: { duration: 1.2, delay: 0.4, ease: "easeOut" }

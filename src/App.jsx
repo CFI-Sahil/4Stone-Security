@@ -61,7 +61,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-slate-50 border-2 border-slate-100 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden shadow-sm">
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary-dark tracking-tight">Need reliable manpower or security?</h2>
+              <h3 className="text-2xl md:text-4xl font-bold mb-6 text-primary-dark tracking-tight">Need reliable manpower or security?</h3>
               <p className="text-slate-600 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
                 Talk to our experts today for a customized plan. We provide solutions that fit your specific business needs with absolute precision.
               </p>

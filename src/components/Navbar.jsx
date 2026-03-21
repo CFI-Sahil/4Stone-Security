@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 bg-primary shadow-lg top-0 left-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <Link to="/" className="flex-shrink-0 flex items-center gap-2 md:gap-3 text-white group cursor-pointer">
             <img src={logo} alt="4 Stone Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain brightness-0 invert" />
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-primary-light p-2"
+              className="text-white hover:text-primary-light"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

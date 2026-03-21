@@ -9,7 +9,7 @@ const About = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-primary-dark text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-40">
           <div className="absolute top-0 left-0 w-64 h-64 md:w-96 md:h-96 bg-primary-light rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-accent rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
         </div>
@@ -90,7 +90,7 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
                 alt="4 Stone Security Office"
-                className="rounded-3xl shadow-2xl"
+                className="rounded-2xl shadow-2xl"
               />
             </motion.div>
           </div>
@@ -169,10 +169,10 @@ const About = () => {
             <h2 className="text-3xl md:text-5xl font-bold text-primary-dark mb-6 tracking-tight font-sans">Industries We Serve</h2>
             <div className="h-1.5 w-24 bg-accent mx-auto rounded-full" />
           </div>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-2 lg:flex lg:flex-wrap justify-center gap-4 md:gap-6">
             {['Industrial', 'IT & Tech', 'Hospitals', 'Banking', 'Construction', 'Logistics'].map((industry) => (
-              <div key={industry} className="py-3 px-8 rounded-full bg-slate-50 border border-slate-100 text-center hover:bg-primary hover:border-primary transition-all cursor-default group shadow-sm hover:shadow-lg hover:shadow-primary/20">
-                <span className="text-sm font-bold tracking-wider text-slate-700 group-hover:text-white transition-colors uppercase">{industry}</span>
+              <div key={industry} className="h-14 sm:h-16 flex items-center justify-center rounded-full bg-slate-50 border border-slate-100 text-center hover:bg-primary hover:border-primary transition-all cursor-default group shadow-sm hover:shadow-lg hover:shadow-primary/20 px-4 sm:px-8 md:min-w-[180px]">
+                <span className="text-[12px] md:text-sm font-bold tracking-wider text-slate-700 group-hover:text-white transition-colors uppercase">{industry}</span>
               </div>
             ))}
           </div>
